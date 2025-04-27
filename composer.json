@@ -3,21 +3,20 @@
     "description": "A simple PDO wrapper class for database operations",
     "type": "library",
     "license": "GPL-3.0",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "r7di4am",
             "email": "r7di4am@gmail.com"
         }
     ],
-
     "require": {
-        "php": "^7.4|^8.0",
-        "r7di4am/rdb": "*"
+        "php": "^7.4|^8.0"
     },
     "autoload": {
         "psr-4": {
             "rdb\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
