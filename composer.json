@@ -2,6 +2,7 @@
     "name": "r7di4am/rdb",
     "description": "A simple PDO wrapper class for database operations",
     "type": "library",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "r7di4am",
