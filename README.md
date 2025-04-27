@@ -23,6 +23,33 @@ This project shows how to work with a database using PDO (PHP Data Objects) thro
 - MySQL or MariaDB database.
 - A database table `users` with fields `id`, `username`, and `password` for testing.
 
+## **Install**
+- composer require r7di4am/rdb
+- In PHP Use It Like This
+```php
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php'; // Composer autoloader
+
+// Database connection
+$pdo = new PDO("mysql:host=localhost;dbname=test", "root", "");
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+// Create an instance of the rdb class
+use rdb\rdb;
+$db = new rdb($pdo);
+
+// Run a query to select all users
+$db->query("SELECT * FROM users");
+
+// Fetch all results
+$users = $db->fetch_all();
+
+// Print the results
+echo "<pre>" . json_encode($users, JSON_PRETTY_PRINT) . "</pre>";
+?>
+```
+---
 ### **Table Schema**
 
 Here is an example table that works with this project:
