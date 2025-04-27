@@ -1,0 +1,19 @@
+{
+    "name": "r7di4am/rdb",
+    "description": "A simple PDO wrapper class for database operations",
+    "type": "library",
+    "authors": [
+        {
+            "name": "r7di4am",
+            "email": "r7di4am@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "rdb\\": "src/"
+        }
+    }
+}

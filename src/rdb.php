@@ -1,4 +1,9 @@
 <?php
+namespace rdb;
+use PDO;
+use PDOException;
+use PDOStatement;
+use Exception;
 class rdb {
     private PDO $conn;
     private ?PDOStatement $stmt = null;
