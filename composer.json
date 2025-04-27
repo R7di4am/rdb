@@ -9,6 +9,12 @@
             "email": "r7di4am@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/r7di4am/rdb"
+        }
+    ],
     "require": {
         "php": "^7.4|^8.0"
     },
